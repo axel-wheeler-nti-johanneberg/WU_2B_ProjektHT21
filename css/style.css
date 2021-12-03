@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#home-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#home-section {
+    background-image: url("../img/sea.jpg");
+    background-size: cover;
+    width: 84vw;
+}
+
+#home-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#main-wrapper {
+    display: grid;
+    grid-template-rows: 14vh auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#main-wrapper #title {
+    font-family: bennet-banner, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50pt;
+    flex-grow: 2;
+    padding: 60px;
+    color: black;
+    text-decoration: none;
+}
+
+#main-wrapper > #logo-wrapper {
+    display: inline-block;
+}
+
+#main-wrapper #logo {
+    height: 100%;
+}
+
+#main-wrapper #menu {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: space-between;
+}
+
+#main-wrapper #menu > a {
+    font-family: roboto-mono, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25pt;
+    color: black;
+    text-decoration: none;
+}
+
+
+#home-wrapper #logo-wrapper {
+    display: inline-block;
+    height: 25vh;
+}
+
+#home-wrapper #logo {
+    width: 100%;
+}
+
+#home-wrapper #menu {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    justify-content: space-between;
+}
+
+#home-wrapper #menu > a {
+    font-family: roboto-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+    /* font-size: 73px; */
+    color: black;
+    text-decoration: none;
+}
+
+#contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-information {
+    padding: 80px;
+}
+
+.contact-information-title {
+    font-family: bennet-banner, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40pt;
+}
+
+.contact-information-text {
+    padding-left: 30px;
+    font-family: roboto-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+}
