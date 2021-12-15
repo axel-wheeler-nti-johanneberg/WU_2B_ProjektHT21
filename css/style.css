@@ -133,4 +133,103 @@ body {
     font-size: 20pt;
 }
 
-.menu-section
+#menu-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-section {
+    transition: flex-basis 2s;
+    flex-basis: 25vw;
+    height: 100%;
+    display: flex;
+}
+
+.menu-section {
+    height: 100%;
+}
+
+
+#menu-section-1 {
+    background-color: powderblue;
+    justify-content: flex-end;
+}
+
+#menu-section-1:hover {
+    background-color: powderblue;
+    flex-basis: 68vh;
+}
+
+#menu-section-background-1 {
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.menu-section-text {
+    position: absolute;
+}
+
+
+#menu-section-2 {
+    background-color: orange;
+}
+
+#menu-section-2:hover {
+    background-color: powderblue;
+    flex-basis: 90vh;
+}
+
+#menu-section-background-2 {
+    height: 150%;
+    object-fit: cover;
+    object-position: 30% -160px;
+}
+
+#menu-section-3 {
+    background-color: olivedrab;
+}
+
+#menu-section-3:hover {
+    background-color: powderblue;
+    flex-basis: 80vh;
+}
+
+#menu-section-background-3 {
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% center;
+}
+
+
+#menu-section-4 {
+    background-color: plum;
+}
+
+#menu-section-4:hover {
+    background-color: powderblue;
+    flex-basis: 70vh;
+}
+
+#menu-section-background-4 {    
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% center;
+}
+
+#menu-section-text-1 {
+    padding: 30px 30px 0 0;
+}
+
+#menu-section-text-2 {
+    padding: 30px 0 0 30px;
+}
+
+#menu-section-text-3 {
+    padding: 30px 0 0 30px;
+}
+
+#menu-section-text-4 {
+    padding: 30px 0 0 30px;
+}
