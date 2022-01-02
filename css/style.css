@@ -41,7 +41,7 @@ body {
 #home-aside #menu {
     display: flex;
     flex-direction: column;
-    height: 160px;
+    height: 200px;
     justify-content: space-between;
 }
 
@@ -49,11 +49,14 @@ body {
     font-family: roboto-mono, monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 2em;
-    /* font-size: 73px; */
+    font-size: 2.8em;
     color: black;
     text-decoration: none;
 }
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ body {
     font-family: bennet-banner, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 3em;
     flex-grow: 2;
     padding: 60px;
     color: black;
@@ -110,6 +113,11 @@ body {
 }
 
 
+
+
+
+
+
 #contact-wrapper {
     display: flex;
     justify-content: center;
@@ -133,6 +141,56 @@ body {
     font-style: normal;
     font-size: 20pt;
 }
+
+
+
+
+
+
+
+#map-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#map-image-section {
+    flex-grow: 3;
+    padding: 80px;
+}
+
+
+#map-information-section {
+    flex-grow: 1;
+    padding: 80px;
+}
+
+.map-information-title {
+    font-family: bennet-banner, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40pt;
+}
+
+.map-information-text {
+    padding-left: 30px;
+    font-family: roboto-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+}
+
+#map-image {
+    border-radius: 25px;
+    width: 1000px;
+}
+
+
+
+
+
+
+
+
 
 #menu-wrapper {
     display: flex;
@@ -223,39 +281,48 @@ body {
     padding: 30px 30px 0 0;
 }
 
-#menu-section-text-2 {
-    padding: 30px 0 0 30px;
-}
-
-#menu-section-text-3 {
-    padding: 30px 0 0 30px;
-}
-
-#menu-section-text-4 {
+#menu-section-text-2, #menu-section-text-3, #menu-section-text-4 {
     padding: 30px 0 0 30px;
 }
 
 .menu-section h1 {
+    font-size: 2.8em;
     font-family: bennet-banner, sans-serif;
     font-style: normal;
     font-weight: 700;
 }
 
-.menu-section p {
+.menu-section td {
+    font-size: 1.2em;
     font-family: roboto-mono, monospace;
     font-style: normal;
     font-weight: 400;
+    padding-left: 8px;
 }
 
-#menu-section-3, #menu-section-4 {
+#menu-section-3, #menu-section-4, #menu-section-3 td, #menu-section-4 td {
     color:white;
 }
 
+#menu-section-text-1 {
+    transform: translateX(40px);
+    transition: transform 0.5s;
+
+}
+
+.menu-section:hover #menu-section-text-1 {
+    transform: translateX(0px);
+    transition: transform 0.5s;
+}
+
+
 .menu-section em {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .menu-section:hover em {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+
 }
