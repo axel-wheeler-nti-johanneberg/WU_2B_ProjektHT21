@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    border: 0;
     overflow: hidden;
 }
 
@@ -41,16 +42,15 @@ body {
 #home-aside #menu {
     display: flex;
     flex-direction: column;
-    height: 160px;
+    height: 20vh;
     justify-content: space-between;
 }
 
 #home-aside #menu > a {
     font-family: roboto-mono, monospace;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 2em;
-    /* font-size: 73px; */
+    font-size: 3em;
     color: black;
     text-decoration: none;
 }
@@ -59,7 +59,7 @@ body {
 
 #main-wrapper {
     display: grid;
-    grid-template-rows: 14vh auto;
+    grid-template-rows: 16.5vh auto;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -69,18 +69,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-bottom: 2px;
+    border-color: #d2d2d2;
+    border-style: solid;
     width: 100%;
     height: 100%;
     z-index: 10;
 }
 
 #main-wrapper #title {
+    align-self: flex-start;
     font-family: bennet-banner, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 2.5em;
+    font-weight: 700;
+    font-size: 3.5em;
     flex-grow: 2;
-    padding: 60px;
+    padding-top: 5.6vh;
+    padding-left: 4.2vw;
     color: black;
     text-decoration: none;
 }
@@ -90,7 +95,7 @@ body {
 }
 
 #main-wrapper #logo {
-    height: 100%;
+    height: 150px;
 }
 
 #main-wrapper #menu {
@@ -104,35 +109,74 @@ body {
     font-family: roboto-mono, monospace;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.8em;
+    font-size: 2.1em;
     color: black;
     text-decoration: none;
 }
 
 
-#contact-wrapper {
+#about-wrapper {
+    height: 58vh;
     display: flex;
+    gap: 5%;
     justify-content: center;
+    padding: 3.7vh 4.2vw;
+
 }
 
-.contact-information {
-    padding: 80px;
+.about-information {
+    width: 50vw
 }
 
-.contact-information-title {
+.about-information-title {
     font-family: bennet-banner, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 40pt;
+    font-weight: 500;
+    font-size: 3em;
 }
 
-.contact-information-text {
+.about-information-text {
     padding-left: 30px;
     font-family: roboto-mono, monospace;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 20pt;
+    font-size: 1.6em;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 46px;
 }
+
+#contact-form {
+    padding-left: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "c1 c2"
+        "c3 c3";
+    grid-template-rows: 5vh 1fr;
+    grid-template-columns: 1fr 7.3vw;
+    gap: 15px;
+}
+
+#contact-subject {
+    grid-area: c1;
+}
+
+#contact-send {
+    grid-area: c2;
+}
+#contact-body {
+    grid-area: c3;
+}
+#contact-subject, #contact-send, #contact-body {
+    font-family: roboto-mono, monospace;
+    font-size: 1.4em;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+}
+
 
 #menu-wrapper {
     display: flex;
@@ -236,12 +280,14 @@ body {
 }
 
 .menu-section h1 {
+    font-size: 3em;
     font-family: bennet-banner, sans-serif;
     font-style: normal;
     font-weight: 700;
 }
 
 .menu-section p {
+    font-size: 1.2em;
     font-family: roboto-mono, monospace;
     font-style: normal;
     font-weight: 400;
@@ -258,4 +304,79 @@ body {
 .menu-section:hover em {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+#back-button {
+    width: 9vh;
+    height: 9vh;
+    cursor: pointer;
+    border: none;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#back-image {
+    width: 8vh;
+    height: 8vh;
+}
+
+
+#map-wrapper {
+    height: 58vh;
+    display: grid;
+    grid-template-areas:
+        "m1 m2"
+        "m1 m3";
+    grid-template-columns: 68vw 32vw;
+    justify-content: center;
+}
+
+#map-image-wrapper {
+    grid-area: m1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#map-image {
+    height: 100%;
+    border-radius: 25px;
+    margin-right: 2.6vw;
+}
+
+#map-information {
+    grid-area: m2;
+    padding-left: 2.6vw;
+}
+
+#map-information-title {
+    font-family: bennet-banner, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#map-information-text {
+    padding-left: 30px;
+    font-family: roboto-mono, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.1em;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 46px;
+}
+
+#map-information-extra {
+    grid-area: m3;
+    padding-left: 2.6vw;
+    display: flex;
+    align-items: end;
+}
+
+#map-information-extra img {
+    width: 50px;
+    padding: 6px;
 }
