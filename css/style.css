@@ -120,7 +120,7 @@ body {
 
 
 #about-wrapper {
-    height: 58vh;
+    min-height: 58vh;
     display: flex;
     gap: 5%;
     justify-content: center;
@@ -168,6 +168,7 @@ body {
 
 #contact-send {
     grid-area: c2;
+    cursor: pointer;
 }
 #contact-body {
     grid-area: c3;
@@ -181,16 +182,8 @@ body {
     padding: 10px;
 }
 
-
-
-
-
-
-
-
-#map-wrapper {
-    display: flex;
-    justify-content: center;
+#email-form {
+    height: 100%;
 }
 
 #map-image-section {
@@ -332,7 +325,7 @@ body {
     font-weight: 700;
 }
 
-.menu-section p {
+.menu-section td {
     font-size: 1.2em;
     font-family: roboto-mono, monospace;
     font-style: normal;
@@ -375,6 +368,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #back-image {
@@ -382,9 +378,8 @@ body {
     height: 8vh;
 }
 
-
 #map-wrapper {
-    height: 58vh;
+    height: auto;
     display: grid;
     grid-template-areas:
         "m1 m2"
